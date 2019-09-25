@@ -1,0 +1,7 @@
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#070707</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="navback">#F1BDBD</color>
+    <color name="navtext">#707070</color>
+</resources>

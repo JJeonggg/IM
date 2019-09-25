@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_header"
+    android:layout_width="match_parent"
+    android:background="@drawable/navheaderback"
+    android:layout_height="130dp">
+
+    <ImageView
+        android:id="@+id/img_profilepic"
+        android:src="@drawable/kakao_default_profile_image"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <RelativeLayout
+        android:id="@+id/nav_header_contents"
+        android:layout_toRightOf="@+id/img_profilepic"
+        android:layout_marginStart="20dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/nav_header_name"
+            android:textAlignment="textStart"
+            android:textColor="#2E2525"
+            android:text="이름"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/nav_header_membertype"
+            android:textAlignment="textStart"
+            android:textColor="#2E2525"
+            android:text="회원구분"
+            android:textSize="15dp"
+            android:layout_below="@+id/nav_header_name"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/nav_header_nickname"
+            android:textAlignment="textStart"
+            android:textColor="#2E2525"
+            android:text="닉네임"
+            android:textSize="10dp"
+            android:layout_below="@+id/nav_header_membertype"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

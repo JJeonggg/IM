@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    tools:context=".SearchPWActivity">
+
+    <ImageView
+        android:id = "@+id/JoinLogo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/login_image"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id = "@+id/search_IDText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/JoinLogo"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:text = "User ID"
+        android:fontFamily="@font/nanumgothic"
+        android:textColor = "#F75B5B"
+        />
+
+    <EditText
+        android:id = "@+id/search_IDEdit"
+        android:layout_toRightOf="@id/search_IDText"
+        android:layout_below="@+id/JoinLogo"
+        android:layout_width="170dp"
+        android:background="@drawable/circle_text"
+        android:layout_height="35dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="85dp"/>
+
+    <TextView
+        android:id = "@+id/search_NameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/search_IDText"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text = "User Name"
+        android:fontFamily="@font/nanumgothic"
+        android:textColor = "#F75B5B"
+        />
+
+    <EditText
+        android:id = "@+id/search_NameEdit"
+        android:layout_toRightOf="@id/search_NameText"
+        android:layout_below="@+id/search_IDText"
+        android:layout_width="170dp"
+        android:background="@drawable/circle_text"
+        android:layout_height="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id = "@+id/search_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_below="@+id/search_NameText"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="20dp"
+        android:text = "Searched PW"
+        android:fontFamily="@font/nanumgothic"
+        android:textColor = "#F75B5B"
+        />
+
+    <EditText
+        android:id = "@+id/search_IDEND"
+        android:layout_toRightOf="@id/search_end"
+        android:layout_below="@+id/search_NameText"
+        android:layout_width="170dp"
+        android:background="@drawable/circle_text"
+        android:layout_height="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:inputType="none"/>
+
+    <Button
+        android:id = "@+id/Search_Checkbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_NameText"
+        android:layout_marginTop="152dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/circle_btn"
+        android:text = "확인"
+        android:textColor = "#F75B5B"
+        android:textStyle="bold"
+        android:onClick="onclickSearchCheck"/>
+
+    <Button
+        android:id = "@+id/Search_Backbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_NameText"
+        android:layout_marginTop="152dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/Search_Checkbtn"
+        android:background="@drawable/circle_btn"
+        android:text = "취소"
+        android:textColor = "#F75B5B"
+        android:textStyle="bold"
+        android:onClick="onclickSearchBack"/>
+
+
+</RelativeLayout>

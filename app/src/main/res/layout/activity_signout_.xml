@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signoutbg"
+    tools:context=".Signout_Activity">
+
+    <RelativeLayout
+        android:id="@+id/signout_btns"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/signout_confirm_btn"
+            android:src="@drawable/signout_confirm"
+            android:scaleType="fitXY"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:layout_width="150dp"
+            android:layout_height="50dp" />
+
+        <ImageButton
+            android:id="@+id/signout_cancel_btn"
+            android:src="@drawable/signout_cancel"
+            android:scaleType="fitXY"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:layout_width="150dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/signout_password_check"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/signout_passwordca"
+            android:text="비밀번호 확인"
+            android:textColor="#F75B5B"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textAlignment="center"
+            android:id="@+id/signout_password_input"
+            android:background="@drawable/signoutpwinput"
+            android:hint="비밀번호를 입력하세요"
+            android:textColor="#707070"
+            android:textSize="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="200dp"
+            android:layout_height="35dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

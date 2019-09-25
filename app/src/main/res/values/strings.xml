@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IM</string>
+    <string name="kakao_app_key">00b06e4ab0b3252fef5e584cc3249728</string>
+
+    <string name="fb_login_protocol_scheme">fb209239869823843</string>
+    <string name="facebook_app_id">288325315430096</string>
+</resources>

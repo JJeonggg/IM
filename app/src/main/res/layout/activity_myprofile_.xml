@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/myprofilebackg"
+    tools:context=".Myprofile_Activity">
+
+    <ImageButton
+        android:id="@+id/myprofile_back_btn"
+        android:src="@drawable/profinfobackbtn"
+        android:scaleType="centerCrop"
+        android:padding="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <RelativeLayout
+        android:id="@+id/myprofile_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/myprofile_circle"
+            android:src="@drawable/myprofilecircle"
+            android:scaleType="centerCrop"
+            android:padding="0dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:textAlignment="textStart"
+            android:id="@+id/myprofile_header_name"
+            android:text="이름"
+            android:textSize="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_toRightOf="@id/myprofile_circle"
+            android:textColor="#707070"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAlignment="textStart"
+            android:id="@+id/myprofile_header_membertype"
+            android:layout_toRightOf="@id/myprofile_circle"
+            android:textColor="#707070"
+            android:text="회원구분"
+            android:layout_marginStart="25dp"
+            android:textSize="20dp"
+            android:layout_below="@id/myprofile_header_name"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAlignment="textStart"
+            android:layout_marginStart="25dp"
+            android:id="@+id/myprofile_header_nickname"
+            android:layout_toRightOf="@id/myprofile_circle"
+            android:text="닉네임"
+            android:textSize="15dp"
+            android:textColor="#707070"
+            android:layout_below="@+id/myprofile_header_membertype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/member_infos"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/myprofile_header"
+        android:layout_marginTop="50dp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/myprofile_id"
+            android:layout_centerHorizontal="true"
+            android:textColor="#707070"
+            android:text="EX"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/myprofile_id_ca"
+            android:layout_alignParentStart="true"
+            android:text="아이디 : "
+            android:textSize="15dp"
+            android:textColor="#F75B5B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/myprofile_name"
+            android:layout_centerHorizontal="true"
+            android:textColor="#707070"
+            android:text="EX"
+            android:textSize="15dp"
+            android:layout_below="@+id/myprofile_id"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/myprofile_name_ca"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/myprofile_id_ca"
+            android:layout_marginTop="10dp"
+            android:text="이름 : "
+            android:textSize="15dp"
+            android:textColor="#F75B5B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/myprofile_dob"
+            android:layout_centerHorizontal="true"
+            android:textColor="#707070"
+            android:text="EX"
+            android:textSize="15dp"
+            android:layout_below="@+id/myprofile_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/myprofile_dob_ca"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/myprofile_name_ca"
+            android:layout_marginTop="10dp"
+            android:text="생년월일 : "
+            android:textSize="15dp"
+            android:textColor="#F75B5B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/myprofile_nickname"
+            android:layout_centerHorizontal="true"
+            android:textColor="#707070"
+            android:text="EX"
+            android:textSize="15dp"
+            android:layout_below="@+id/myprofile_dob"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/myprofile_nickname_ca"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/myprofile_dob_ca"
+            android:layout_marginTop="10dp"
+            android:text="닉네임 : "
+            android:textSize="15dp"
+            android:textColor="#F75B5B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/myprofile_address"
+            android:layout_centerHorizontal="true"
+            android:textColor="#707070"
+            android:text="EX"
+            android:textSize="15dp"
+            android:layout_below="@+id/myprofile_nickname"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/myprofile_address_ca"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/myprofile_nickname_ca"
+            android:layout_marginTop="10dp"
+            android:text="주소 : "
+            android:textSize="15dp"
+            android:textColor="#F75B5B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/myprofile_phone"
+            android:layout_centerHorizontal="true"
+            android:textColor="#707070"
+            android:text="EX"
+            android:textSize="15dp"
+            android:layout_below="@+id/myprofile_address"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/myprofile_phone_ca"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/myprofile_address_ca"
+            android:layout_marginTop="10dp"
+            android:text="전화번호 : "
+            android:textSize="15dp"
+            android:textColor="#F75B5B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/myprofile_membertype"
+            android:layout_centerHorizontal="true"
+            android:textColor="#707070"
+            android:text="EX"
+            android:textSize="15dp"
+            android:layout_below="@+id/myprofile_phone"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/myprofile_membertype_ca"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/myprofile_phone_ca"
+            android:layout_marginTop="10dp"
+            android:text="회원구분 : "
+            android:textSize="15dp"
+            android:textColor="#F75B5B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/member_infos"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Myprofie_bottom_btns"
+        android:layout_marginTop="30dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/edit_info_btn"
+            android:background="@android:color/transparent"
+            android:src="@drawable/edit_infobtn"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitCenter"
+            android:layout_width="150dp"
+            android:layout_height="70dp" />
+
+        <ImageButton
+            android:id="@+id/signout_btn"
+            android:src="@drawable/signout_btn"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_alignParentEnd="true"
+            android:padding="0dp"
+            android:layout_width="150dp"
+            android:layout_height="70dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

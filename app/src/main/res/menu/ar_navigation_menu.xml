@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="데스크">
+        <menu>
+            <item
+                android:id="@+id/desk_1"
+                android:title="DESK 1"
+                android:icon="@drawable/desk"/>
+        </menu>
+    </item>
+
+    <item android:title="의자">
+        <menu>
+            <item
+                android:id="@+id/chair_1"
+                android:title="CHAIR 1"
+                android:icon="@drawable/chair1"/>
+        </menu>
+    </item>
+
+    <item android:title="침대">
+        <menu>
+            <item
+                android:id="@+id/bed_1"
+                android:title="BED 1"
+                android:icon="@drawable/bed"/>
+        </menu>
+    </item>
+
+    <item android:title="옷장">
+        <menu>
+            <item
+                android:id="@+id/closet_1"
+                android:title="CLOSET 1"
+                android:icon="@drawable/closet"/>
+        </menu>
+    </item>
+
+    <item android:title="테이블">
+        <menu>
+            <item
+                android:id="@+id/table_1"
+                android:title="TABLE 1"
+                android:icon="@drawable/table1"/>
+        </menu>
+    </item>
+
+    <item android:title="MY">
+        <menu>
+            <item
+                android:id="@+id/MY_1"
+                android:title="MY 1"
+                android:icon="@drawable/table1"/>
+        </menu>
+    </item>
+    <item android:title="BOX">
+        <menu>
+            <item
+                android:id="@+id/BOX_1"
+                android:title="BOX"
+                android:icon="@drawable/box"/>
+        </menu>
+    </item>
+</menu>

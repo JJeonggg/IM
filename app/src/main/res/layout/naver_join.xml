@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    tools:context=".NaverActivity">
+
+
+    <ImageView
+        android:id = "@+id/JoinLogo"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="80dp"
+        android:src="@drawable/login_image"
+        android:layout_marginTop="30dp"
+        />
+    <RelativeLayout
+        android:layout_below="@id/JoinLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id = "@+id/JoinIDText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:text = "ID"
+            android:fontFamily="@font/nanumgothic"
+            android:textColor = "#F75B5B"
+            />
+
+        <Button
+            android:id="@+id/Checkid"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/circle_btn"
+            android:text="Check"
+            android:textColor="#F75B5B"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id = "@+id/JoinID"
+            android:layout_toRightOf="@id/JoinIDText"
+            android:layout_width="170dp"
+            android:background="@drawable/circle_text"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="120dp"/>
+
+        <TextView
+            android:id = "@+id/JoinPWText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/JoinIDText"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="20dp"
+            android:text = "Password"
+            android:fontFamily="@font/nanumgothic"
+            android:textColor = "#F75B5B"
+            />
+
+        <EditText
+            android:id = "@+id/JoinPW"
+            android:layout_toRightOf="@id/JoinPWText"
+            android:layout_below="@+id/JoinID"
+            android:layout_width="170dp"
+            android:background="@drawable/circle_text"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id = "@+id/JoinADText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/JoinPWText"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text = "Address"
+            android:fontFamily="@font/nanumgothic"
+            android:textColor = "#F75B5B"
+            />
+
+        <Button
+            android:id="@+id/CheckAD"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/JoinPW"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/circle_btn"
+            android:text="add"
+            android:textColor="#F75B5B"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id = "@+id/JoinAD"
+            android:layout_toRightOf="@id/JoinADText"
+            android:layout_below="@+id/JoinPW"
+            android:layout_width="170dp"
+            android:background="@drawable/circle_text"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="65dp"/>
+
+        <TextView
+            android:id = "@+id/JoinNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/JoinADText"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text = "Name"
+            android:fontFamily="@font/nanumgothic"
+            android:textColor = "#F75B5B"
+            />
+
+        <EditText
+            android:id = "@+id/JoinName"
+            android:layout_toRightOf="@id/JoinNameText"
+            android:layout_below="@+id/JoinAD"
+            android:layout_width="170dp"
+            android:background="@drawable/circle_text"
+            android:layout_height="35dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="85dp"/>
+
+        <TextView
+            android:id = "@+id/JoinBirText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/JoinNameText"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text = "Birth"
+            android:fontFamily="@font/nanumgothic"
+            android:textColor = "#F75B5B"
+            />
+
+        <Button
+            android:id="@+id/Checkbirth"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/JoinNameText"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/circle_btn"
+            android:text="add"
+            android:textColor="#F75B5B"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id = "@+id/JoinBirth"
+            android:layout_toRightOf="@id/JoinBirText"
+            android:layout_below="@+id/JoinName"
+            android:layout_width="170dp"
+            android:background="@drawable/circle_text"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="95dp"/>
+
+        <TextView
+            android:id = "@+id/JoinNickText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/JoinBirText"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text = "Nickname"
+            android:fontFamily="@font/nanumgothic"
+            android:textColor = "#F75B5B"
+            />
+
+        <Button
+            android:id="@+id/CheckNick"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/Checkbirth"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/circle_btn"
+            android:text="ch"
+            android:textColor="#F75B5B"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id = "@+id/JoinNickname"
+            android:layout_toRightOf="@id/JoinBirText"
+            android:layout_below="@+id/JoinBirth"
+            android:layout_width="170dp"
+            android:background="@drawable/circle_text"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="95dp"/>
+
+        <TextView
+            android:id = "@+id/JoinPhoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/JoinNickText"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text = "Phone"
+            android:fontFamily="@font/nanumgothic"
+            android:textColor = "#F75B5B"
+            />
+
+        <EditText
+            android:id = "@+id/JoinPhone"
+            android:layout_toRightOf="@id/JoinPhoneText"
+            android:layout_below="@+id/JoinNickname"
+            android:layout_width="170dp"
+            android:background="@drawable/circle_text"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="79dp"/>
+
+        <TextView
+            android:id = "@+id/JoinMemberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_below="@+id/JoinPhoneText"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text = "Member"
+            android:fontFamily="@font/nanumgothic"
+            android:textColor = "#F75B5B"
+            />
+
+        <Button
+            android:id = "@+id/JoinMember"
+            android:layout_toRightOf="@id/JoinMemberText"
+            android:layout_below="@+id/JoinPhone"
+            android:layout_width="170dp"
+            android:text = "회원 선택"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/circle_btn"
+            android:textColor = "#F75B5B"
+            android:textStyle="bold"
+            android:onClick="onPopupButtonClick"
+            android:layout_marginLeft="60dp"/>
+
+        <Button
+            android:id = "@+id/JoinCheckbtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/JoinMemberText"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/circle_btn"
+            android:text = "확인"
+            android:onClick="insert"
+            android:textColor = "#F75B5B"
+            android:textStyle="bold" />
+
+        <Button
+            android:id = "@+id/JoinBackbtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/JoinMember"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/JoinCheckbtn"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/circle_btn"
+            android:text = "취소"
+            android:textColor = "#F75B5B"
+            android:textStyle="bold"
+            android:onClick="onclickBack"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

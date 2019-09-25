@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainback"
+    tools:context="MainActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/sidebar_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_sidebar_menu" />
+
+            <ImageButton
+                android:id="@+id/ar_btn"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="200dp"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_ar" />
+
+            <ImageButton
+                android:id="@+id/d3_btn"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/ar_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="38dp"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_3d" />
+
+            <ImageButton
+                android:id="@+id/myf_btn"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/d3_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="38dp"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_myf" />
+
+            <ImageButton
+                android:id="@+id/comm_btn"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/myf_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="38dp"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/btn_comm" />
+
+        </RelativeLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_View"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginLeft="50dp"
+            android:background="#F1BDBD"
+            app:itemTextColor="@color/navtext"
+            app:itemBackground="@drawable/itemback"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            app:headerLayout="@layout/navigation_header"
+            app:menu="@menu/navigation_menu">
+
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "로그아웃"
+        android:id = "@+id/logout"
+        /> -->
+
+
+</RelativeLayout>
