@@ -51,7 +51,16 @@ public class Myprofile_Activity extends AppCompatActivity {
 
         Header_name.setText(user.get(sessionManager.NAME));
         Header_nickname.setText(user.get(sessionManager.NICKNAME));
-        Header_membertype.setText("사업자");
+        if(sessionManager.CLASSFI == "1")
+        {
+            Header_membertype.setText("사업자");
+            myprofile_membertype.setText("사업자");
+        }
+        else
+        {
+            Header_membertype.setText("일반 회원");
+            myprofile_membertype.setText("일반 회원");
+        }
 
         myprofile_id.setText(user.get(sessionManager.ID));
         myprofile_name.setText(user.get(sessionManager.NAME));
@@ -59,7 +68,6 @@ public class Myprofile_Activity extends AppCompatActivity {
         myprofile_nickname.setText(user.get(sessionManager.NICKNAME));
         myprofile_address.setText(user.get(sessionManager.ADDRESS));
         myprofile_phone.setText(user.get(sessionManager.TELE));
-        myprofile_membertype.setText("사업자");
 
 
         try{
@@ -96,7 +104,8 @@ public class Myprofile_Activity extends AppCompatActivity {
         edit_info_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Myprofile_Activity.this, "준비중인 기능입니다.", Toast.LENGTH_LONG).show();
+                Intent modify = new Intent(getApplicationContext(), profileModify.class);
+                startActivity(modify);
             }
         });
 

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:background="@drawable/myprofilebackg">
+
+    <ImageView
+        android:id="@+id/JoinLogo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/login_image" />
+
+    <RelativeLayout
+        android:layout_marginLeft="80dp"
+        android:id="@+id/myprofile_header"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp">
+
+        <ImageView
+            android:id="@+id/myprofile_circle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/myprofilecircle" />
+
+        <TextView
+            android:id="@+id/myprofile_header_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_toRightOf="@id/myprofile_circle"
+            android:text="이름"
+            android:textAlignment="textStart"
+            android:textColor="#707070"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/myprofile_header_membertype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myprofile_header_name"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/myprofile_circle"
+            android:text="회원구분"
+            android:textAlignment="textStart"
+            android:textColor="#707070"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/myprofile_header_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myprofile_header_membertype"
+            android:layout_marginStart="25dp"
+            android:layout_toRightOf="@id/myprofile_circle"
+            android:text="닉네임"
+            android:textAlignment="textStart"
+            android:textColor="#707070"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myprofile_header"
+        android:layout_marginTop="100dp"
+        >
+
+        <TextView
+            android:id="@+id/JoinIDText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nanumgothic"
+            android:text="ID"
+            android:textColor="#F75B5B"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/JoinID"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/JoinIDText"
+            android:background="@drawable/circle_text"
+            android:enabled="false" />
+
+
+        <TextView
+            android:id="@+id/JoinADText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/JoinIDText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nanumgothic"
+            android:text="Address"
+            android:textColor="#F75B5B"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/CheckAD"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/JoinID"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/circle_btn"
+            android:text="add"
+            android:textColor="#F75B5B"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/JoinAD"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/JoinID"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/JoinADText"
+            android:background="@drawable/circle_text" />
+
+
+        <TextView
+            android:id="@+id/JoinBirText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/JoinADText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nanumgothic"
+            android:text="Birth"
+            android:textColor="#F75B5B"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/Checkbirth"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/JoinADText"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/circle_btn"
+            android:text="add"
+            android:textColor="#F75B5B"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/JoinBirth"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/JoinAD"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/JoinBirText"
+            android:background="@drawable/circle_text" />
+
+        <TextView
+            android:id="@+id/JoinNickText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/JoinBirText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nanumgothic"
+            android:text="Nickname"
+            android:textColor="#F75B5B"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/CheckNick"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/Checkbirth"
+            android:layout_marginLeft="115dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/circle_btn"
+            android:text="ch"
+            android:textColor="#F75B5B"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/JoinNickname"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/JoinBirth"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/JoinBirText"
+            android:background="@drawable/circle_text" />
+
+        <TextView
+            android:id="@+id/JoinPhoneText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/JoinNickText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/nanumgothic"
+            android:text="Phone"
+            android:textColor="#F75B5B"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/JoinPhone"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/JoinNickname"
+            android:layout_marginLeft="79dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/JoinPhoneText"
+            android:background="@drawable/circle_text" />
+
+        <Button
+            android:id="@+id/JoinCheckbtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/JoinPhoneText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/circle_btn"
+            android:onClick="insert"
+            android:text="확인"
+            android:textColor="#F75B5B"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/JoinBackbtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/JoinPhone"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/JoinCheckbtn"
+            android:background="@drawable/circle_btn"
+            android:onClick="onclickBack"
+            android:text="취소"
+            android:textColor="#F75B5B"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

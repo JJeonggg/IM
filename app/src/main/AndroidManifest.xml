@@ -25,6 +25,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <activity android:name=".MesActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -40,7 +43,6 @@
             android:name=".threeD_Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
         <activity
             android:name=".Custom_Activity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -98,6 +100,12 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".NaverActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".profileModify"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".AddModify"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".NaverlicenseeActivity"
