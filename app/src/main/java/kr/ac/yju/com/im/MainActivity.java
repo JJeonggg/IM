@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         String mPhoto = user.get(sessionManager.PHOTO);
 
 
-        if(SplashActivity.mescheck == 1){
+        if(loginActivity.mescheck == 1){
             messeageCheck(mId);
         }
 
@@ -243,10 +243,10 @@ public class MainActivity extends AppCompatActivity {
             System.out.print("Response:" + response);
 
             if(response.equalsIgnoreCase("Message Found")){
-                SplashActivity.mescheck = 0;
+                loginActivity.mescheck = 0;
                 createNotification();
             }else {
-                SplashActivity.mescheck = 0;
+                loginActivity.mescheck = 0;
             }
         } catch (Exception e) {
             e.printStackTrace();

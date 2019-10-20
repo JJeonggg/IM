@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 public class SplashActivity extends Activity {
 
-    public static int mescheck = 0;
 
     @Override
 
@@ -18,7 +17,6 @@ public class SplashActivity extends Activity {
         }catch(InterruptedException e) {
             e.printStackTrace();
         }
-        mescheck = 1;
         startActivity(new Intent(this, loginActivity.class));
         finish();
     }
