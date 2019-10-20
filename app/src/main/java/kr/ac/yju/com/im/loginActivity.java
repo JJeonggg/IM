@@ -67,7 +67,7 @@ import java.util.Map;
 public class loginActivity extends AppCompatActivity
 {
 
-    public static int mescheck = 0;
+    public static int messcheck = 0;
     String snsNumber;
 
     private static final String TAG = "gapps";
@@ -248,7 +248,7 @@ public class loginActivity extends AppCompatActivity
                                 intent.putExtra("BIRTHDAY", BIRTHDAY);
                                 intent.putExtra("NICKNAME", NICKNAME);
                                 intent.putExtra("PHOTO", PHOTO);
-                                mescheck = 1;
+                                messcheck = 1;
                                 startActivity(intent);
                                 finish();
 
