@@ -5,3 +5,5 @@
 PM : 정현철 
 
 조원 : 홍도영 박준수 김재욱 김민재  
+
+Android / Google ARCore / Kakao, Naver, Facebook login API / Daum map API
